@@ -1,0 +1,15 @@
+{
+  "name": "Ordem Paranormal",
+  "version": "1.0.0",
+  "manifest_version": 1,
+  "author": "Gabriel Borges",
+  "icon": "/logo.png",
+  "description": "Ordem Paranormal",
+  "action": {
+    "title": "Ordem Paranormal",
+    "icon": "/icon.svg",
+    "popover": "/",
+    "height": 129,
+    "width": 400
+  }
+}
