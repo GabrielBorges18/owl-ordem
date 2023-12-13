@@ -43,9 +43,11 @@ body {
 }
 .nameCharacter{
   margin-top: 0px;
-  margin-bottom:5px;
-  font-size:23px;
+  margin-top: 0px;
+  margin-bottom:0px;
+  font-size:1.1rem;
   color: white;
+  text-align: center;
 }
 
 .hp{
@@ -78,4 +80,7 @@ body {
 .MuiInput-input{
   margin-bottom: 0;
   padding-bottom: 0;
+}
+.MuiInputBase-root{
+  height:0px;
 }

@@ -43,6 +43,9 @@ export function InitiativeListItem({
             textAlign: "right",
           },
         }}
+        style={{
+          height:"20px"
+        }}
         value={statsCharacter.hp}
         onChange={(e) => {
           const newCount = e.target.value;

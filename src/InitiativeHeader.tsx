@@ -13,12 +13,12 @@ export function InitiativeHeader({
   return (
     <>
       <CardHeader
-        title="Ordo Realitas"
+        title="Equipe"
         titleTypographyProps={{
           sx: {
             fontSize: "1.125rem",
             fontWeight: "bold",
-            lineHeight: "10px",
+            lineHeight: "0.4rem",
             color: "text.primary",
             textAlign: "center",
             marginBottom: "0px"
