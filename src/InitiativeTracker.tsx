@@ -13,6 +13,7 @@ import { statsCharacter } from "./statsCharacter";
 
 import addIcon from "./assets/add.svg";
 import removeIcon from "./assets/remove.svg";
+import marca from "./assets/teste.png";
 
 import { InitiativeListItem } from "./InitiativeListItem";
 import { getPluginId } from "./getPluginId";
@@ -288,7 +289,7 @@ export function InitiativeTracker() {
 
   return (
     <>
-      <img className="fundo" src="teste.png" />
+      <img className="fundo" src={marca} />
       <Stack height="100vh">
         <InitiativeHeader
           subtitle={statsCharacter.length === 0 ? "" : undefined}
