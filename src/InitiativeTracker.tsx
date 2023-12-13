@@ -22,7 +22,14 @@ import { isPlainObject } from "./isPlainObject";
 /** Check that the item metadata is in the correct format */
 function isMetadata(
   metadata: unknown
-): metadata is { hp: string; active: boolean; maxHp: string; sanity: string; maxSanity:string; points: string  } {
+): metadata is {
+  hp: string;
+  active: boolean;
+  maxHp: string;
+  sanity: string;
+  maxSanity: string;
+  points: string;
+} {
   return (
     isPlainObject(metadata) &&
     typeof metadata.hp === "string" &&
@@ -34,7 +41,6 @@ export function InitiativeTracker() {
   const [statsCharacter, setStatsCharacter] = useState<statsCharacter[]>([]);
   const [role, setRole] = useState<"GM" | "PLAYER">("PLAYER");
 
-  
   useEffect(() => {
     const handlePlayerChange = (player: Player) => {
       setRole(player.role);
@@ -281,18 +287,15 @@ export function InitiativeTracker() {
   }, []);
 
   return (
-    <Stack height="100vh">
-      <InitiativeHeader
-        subtitle={
-          statsCharacter.length === 0
-            ? ""
-            : undefined
-        }
-      />
-      <Box sx={{ overflowY: "auto" }}>
-        <List ref={listRef}>
-          {statsCharacter
-            .map((stats) => (
+    <>
+      <img className="fundo" src="./public/teste.png" />
+      <Stack height="100vh">
+        <InitiativeHeader
+          subtitle={statsCharacter.length === 0 ? "" : undefined}
+        />
+        <Box sx={{ overflowY: "auto" }}>
+          <List ref={listRef}>
+            {statsCharacter.map((stats) => (
               <InitiativeListItem
                 key={stats.id}
                 statsCharacter={stats}
@@ -314,8 +317,9 @@ export function InitiativeTracker() {
                 showHidden={role === "GM"}
               />
             ))}
-        </List>
-      </Box>
-    </Stack>
+          </List>
+        </Box>
+      </Stack>
+    </>
   );
 }

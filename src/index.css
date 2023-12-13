@@ -84,3 +84,9 @@ body {
 .MuiInputBase-root{
   height:0px;
 }
+.fundo{
+  position: fixed;
+  top: 25vh;
+  right:0;
+  opacity: 0.20;
+}
