@@ -288,7 +288,7 @@ export function InitiativeTracker() {
 
   return (
     <>
-      <img className="fundo" src="./public/teste.png" />
+      <img className="fundo" src="teste.png" />
       <Stack height="100vh">
         <InitiativeHeader
           subtitle={statsCharacter.length === 0 ? "" : undefined}
