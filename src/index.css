@@ -6,10 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
+  background-color: black;
 }
 
 :not(html):not(body)::-webkit-scrollbar {
-  background-color: transparent;
+  background-color: black;
   border-radius: 100px;
 }
 :not(html):not(body)::-webkit-scrollbar:vertical {
